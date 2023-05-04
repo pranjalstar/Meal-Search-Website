@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Meal App</title>
+    <link rel="stylesheet" href="style.css" />
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e6f12e5790.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="background-image">
+        <img src="./assets/mealfood.jpg" alt="" />
+    </div>
+
+
+    <div id="navbar">
+        <a href="index.html">
+            <div class="top-logo">The Meal App
+                <hr />
+            </div>
+        </a>
+       
+
+        <div class="side-drawer">
+
+            <div id="toggle-sidebar">
+                <i class="fa-solid fa-bars"></i>
+                <span id="total-counter">0</span>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="main">
+
+        <div id="sidebar">
+            <div class="top_gap"></div>
+            <hr />
+            <div class="title small">
+                Favourite Items
+            </div>
+            <hr />
+            <div id="fav">
+             
+
+            </div>
+
+        </div>
+        <div id="flex-box">
+
+
+
+            <div class="container">
+
+                <div class="header">
+                    <div class="title">
+                        Search Meal
+                    </div>
+                </div>
+                <div class="" id="search-bar">
+                    <div class="icon">
+                        <i class="fa-solid fa-search "></i>
+                    </div>
+                    <div class="new-search-input">
+                        <form onkeyup="showMealList()">
+                            <input id="search-input" type="text" placeholder="Search food, receipe" />
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+           
+            
+                <!--change-->
+                <h1 style="text-align: center; color: aliceblue;"> Famous Meal</h1>
+
+            <div id="cards-holder" class="">
+
+                           
+                
+
+                <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/day1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Spring Mix Salad</h5>
+                      <p class="card-text"> Juicy tomato, fresh spring lettuce mix, and subtly sweet red onion combine for a veggie-packed recipe that works with nearly any main</p>
+                      <a href="https://foolproofliving.com/spring-mix-salad/" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+          
+
+
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/day 2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken Parmesan</h5>
+                      <p class="card-text"> Chicken Parmesan is no doubt the most popular non-pasta dish in Italian-American style restaurants. And while this delicious meal may seem fancy, it's actually pretty easy to make at home.</p>
+                      <a href="https://www.allrecipes.com/recipe/223042/chicken-parmesan/" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/3day.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Matar Paneer </h5>
+                      <p class="card-text">Matar paneer recipe is a popular Indian Curry dish made with green peas and Paneer (Indian cottage cheese) in a base of onions, tomatoes, cashews, spices and herbs</p>
+                      <a href="https://www.vegrecipesofindia.com/matar-paneer/" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/4day.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Aloo paratha</h5>
+                      <p class="card-text">Aloo paratha is a paratha stuffed with a special potato filling known as Aloo chokha. It is traditionally eaten for breakfast.</p>
+                      <a href="https://www.vegrecipesofindia.com/aloo-paratha-indian-bread-stuffed-with-potato-filling/" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/5 day.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Aloo Matar Gobi</h5>
+                      <p class="card-text">Aloo Matar Gobi is a simple, homely sabji made using fresh peas, cauliflower, and potatoes. It can be served with Phulkas as well as Parathas</p>
+                      <a href="https://www.whiskaffair.com/aloo-matar-gobi/" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/6day.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Kadai Paneer</h5>
+                      <p class="card-text">Kadai Paneer is a popular paneer recipe where paneer and bell peppers are cooked in a spicy masala.It is one of the most popular paneer recipes</p>
+                      <a href="https://www.cookwithmanali.com/kadai-paneer/" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+                           
+          
+
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/day7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Amish chicken </h5>
+                      <p class="card-text">Amish chicken is a traditional American poultry dish. It is made with a combination of chicken, flour, garlic powder, heavy cream, paprika, water, salt, and pepper. </p>
+                      <a href="https://www.tasteatlas.com/50-most-popular-dishes-in-western-united-states" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/day8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Navajo tacos</h5>
+                      <p class="card-text">Navajo tacos, Indian tacos, or frybread tacos is a traditional American dish originating from the Midwest and Intermountain region states such as Arizona, South Dakota, and Oklahoma. </p>
+                      <a href="https://www.tasteatlas.com/50-most-popular-dishes-in-western-united-states" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/day9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Seattle dog</h5>
+                      <p class="card-text">Seattle dog is a variety of a hot dog consisting of a toasted bun and a sausage that is topped with cream cheese, barbecue sauce, cabbage, and a large amount of grilled onions</p>
+                      <a href="https://www.tasteatlas.com/seattle-dog" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/d ay10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Denver omelet </h5>
+                      <p class="card-text">Denver omelet is an American dish made with eggs, ham or bacon, onions, and green peppers. In order to prepare it, the mixture is poured into a frying pan, cooked, and folded to form an omelet.</p>
+                      <a href="https://www.tasteatlas.com/denver-omelet" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/day11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Carne asada burrito</h5>
+                      <p class="card-text">Carne asada burrito is a type of burrito that originates from San Diego. The dish consists of a large flour tortilla topped with carne asada meat, pico de gallo, and guacamole.</p>
+                      <a href="https://www.tasteatlas.com/carne-asada-fries" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="6daymeal/12day.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Rainbow roll </h5>
+                      <p class="card-text">Rainbow roll is a type of uramaki or upside-down sushi, where the rice is on the exterior, wrapped around nori seaweed that holds the other ingredients on the inside. </p>
+                      <a href="https://www.tasteatlas.com/rainbow-roll" class="btn btn-primary">Recipe</a>
+                    </div>
+                  </div>
+
+
+        </div>
+       
+          
+
+  
+      </div>
+      
+
+          </div>
+
+     
+        
+        
+         
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    
+   <script src="script.js"></script>
+</body>
+
+</html>
